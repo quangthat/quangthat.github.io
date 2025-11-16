@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Starfield -->
+    <div class="stars" id="stars"></div>
+    
+    <!-- Cyber Grid -->
+    <div class="cyber-grid"></div>
+    
+    <!-- Hexagon Pattern -->
+    <div class="hexagon-pattern"></div>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="loader-text">HQT</div>
+        </div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -23,7 +41,6 @@
                     <text x="5" y="27" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="url(#logoGradient)" text-anchor="start">H</text>
                     <text x="30" y="27" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="url(#logoGradient)" text-anchor="start">Q</text>
                     <text x="55" y="27" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="url(#logoGradient)" text-anchor="start">T</text>
-                    <line x1="18" y1="20" x2="48" y2="20" stroke="url(#logoGradient)" stroke-width="2" opacity="0.5"/>
                 </svg>
             </a>
             <ul class="nav-menu">
@@ -45,9 +62,14 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-grid">
+                <!-- Morphing Blobs -->
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="blob blob-3"></div>
+                
                 <div class="hero-content">
                     <h1>Xin chào, tôi là <span class="highlight">Huỳnh Quang Thật</span></h1>
-                    <p class="hero-subtitle">Digital Marketing Specialist</p>
+                    <p class="hero-subtitle"><span id="typed"></span></p>
                     <p class="hero-description">Chuyên gia Marketing Facebook Ads với niềm đam mê tối ưu hiệu suất quảng cáo và xây dựng chiến lược truyền thông hiệu quả.</p>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn btn-primary">Liên hệ</a>
@@ -365,6 +387,15 @@
         </div>
     </footer>
 
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Typed.js for typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- GSAP for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis for smooth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
